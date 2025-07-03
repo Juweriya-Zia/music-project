@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blue Vibes</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1 class="logo">🎶 LifeTunes </h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#artist">Artist</a></li>
+        <li><a href="#playlist">Create Playlist</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id ="home" class=" section hero">
+      <img src="images1/music 2 boy.jpg" alt="Person Listening to Music" class="hero-image">
+      <div class="hero-text">
+        <h1><i><span class="highlight">Welcome</span> to LifeTunes </i></h1>
+        <h3><i>"<span class="highlight">Music</span> is the soundtrack of your life"</i></h3>
+        <p>Let's mix your favorite tunes with your favorite people by creating and sharing playlists with your friends.</p>
+      </div>
+    </section>
+
+ <section id="artist" class="section" style="background-color: #f1f7ff;">
+  <h2>Featured Artists</h2>
+  <div class="artist-list">
+
+    <a href="arjit.html" class="artist-card">
+      <img src="https://i.cdn.newsbytesapp.com/images/l37220210424184951.png" alt="Arijit Singh">
+      <p>Arijit Singh</p>
+    </a>
+
+    <a href="shreya.html" class="artist-card">
+      <img src="https://www.bollywoodhungama.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-24-at-4.43.34-PM.jpeg" alt="Shreya Ghoshal">
+      <p>Shreya Ghoshal</p>
+    </a>
+
+    <a href="atif.html" class="artist-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSTj7fb-FZs9rq1Seol1LDc_WrpCUAk4mAwQ&s" alt="Atif Aslam">
+      <p>Atif Aslam</p>
+    </a>
+
+    <a href="kk.html" class="artist-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZgRmcmRmarzIPlnGFf8OMWzcae5QaCe92Q&s" alt="KK">
+      <p>KK</p>
+    </a>
+
+    <a href="anuv.html" class="artist-card">
+      <img src="https://engage4more.com/blog/wp-content/uploads/2024/02/ANUV-JAIN-_Mobile-social-post.jpg" alt="Anuv Jain">
+      <p>Anuv Jain</p>
+    </a>
+
+    <a href="aasha.html" class="artist-card">
+      <img src="https://news.bbc.co.uk/media/images/38366000/jpg/_38366543_ashastage150.jpg" alt="Anuv Jain">
+      <p>Aasha Bhosle</p>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- <section id="playlist" class="playlist-section" style="background-color: #f1f7ff;">
+  <h2> Create Your Playlist </h2>
+  <div class="playlist-form">
+    <label for="songSelect">Select Songs:</label>
+    <select id="songSelect" onchange="playSong()">
+      <option value="">-- Select a Song --</option>
+      <option value="songs/Khairiyat (Bonus Track) - Chhichhore 128 Kbps.mp3">Khairiyat</option>
+      <option value="songs/Dekhte Dekhte - Batti Gul Meter Chalu 128 Kbps.mp3">Deewani Mastani</option>
+      <option value="songs/Dil Diyan Gallan - Tiger Zinda Hai 128 Kbps.mp3">Dil Diyan Gallan </option>
+      <option value="songs/Dil Ibaadat (Rock) - Tum Mile 128 Kbps.mp3">Dil ibaadat</option>
+      <option value="songs/Galti Se Mistake - Jagga Jasoos 128 Kbps.mp3">Galti se Mistake</option>
+      <option value="songs/Paniyon Sa - Satyameva Jayate 128 Kbps.mp3">Paniyon Sa</option>
+      <option value="songs/Jeene Laga Hoon - Ramaiya Vastavaiya 128 Kbps.mp3">Jeene Laga Hoon</option>
+      <option value="songs/Sajni - Laapataa Ladies 128 Kbps.mp3">Sajni</option>
+      <option value="songs/Sooraj Dooba Hain - Roy 128 Kbps.mp3">Sooraj Booba Hai</option>
+      <option value="songs/Sunn Raha Hai (Female) - Aashiqui 2 128 Kbps.mp3">Sun Raha Hai</option>
+      <option value="songs\Ye Ishq Hai - Jab We Met 128 Kbps.mp3">Ye Ishq Hai</option>
+    </select>
+
+    <audio id="audioPlayer" controls></audio>
+
+    <button onclick="playSong()">Play Song</button>
+  </div>
+</section>-->
+
+
+<section id="playlist" class="playlist-section" style="background-color: #f1f7ff;">
+  <h2 style="text-align:center;">🎶 Create Your Playlist</h2>
+
+  <div class="playlist-form">
+    <label for="songSelect">Select Song to Add:</label>
+    <select id="songSelect">
+      <option value="">-- Select a Song --</option>
+      <option value="songs/Khairiyat (Bonus Track) - Chhichhore 128 Kbps.mp3">Khairiyat</option>
+      <option value="songs/Dekhte Dekhte - Batti Gul Meter Chalu 128 Kbps.mp3">Deewani Mastani</option>
+      <option value="songs/Dil Diyan Gallan - Tiger Zinda Hai 128 Kbps.mp3">Dil Diyan Gallan</option>
+      <option value="songs/Dil Ibaadat (Rock) - Tum Mile 128 Kbps.mp3">Dil Ibaadat</option>
+      <option value="songs/Galti Se Mistake - Jagga Jasoos 128 Kbps.mp3">Galti Se Mistake</option>
+      <option value="songs/Paniyon Sa - Satyameva Jayate 128 Kbps.mp3">Paniyon Sa</option>
+      <option value="songs/Jeene Laga Hoon - Ramaiya Vastavaiya 128 Kbps.mp3">Jeene Laga Hoon</option>
+      <option value="songs/Sajni - Laapataa Ladies 128 Kbps.mp3">Sajni</option>
+      <option value="songs/Sooraj Dooba Hain - Roy 128 Kbps.mp3">Sooraj Dooba Hai</option>
+      <option value="songs/Sunn Raha Hai (Female) - Aashiqui 2 128 Kbps.mp3">Sunn Raha Hai</option>
+      <option value="songs/Ye Ishq Hai - Jab We Met 128 Kbps.mp3">Ye Ishq Hai</option>
+      <option value="songs/Le Gayi - Dil To Pagal Hai 128 Kbps.mp3">Le gayi </option>
+      <option value="songs/Intaha Ho Gai Intezar Ki Sharaabi 128 Kbps.mp3">Intoha Ho Gai</option>
+    </select>
+
+    <button onclick="addToPlaylist()">➕ Add to Playlist</button>
+  </div>
+
+  <div id="userPlaylist" style="margin-top:30px;">
+    <h3>Your Playlist</h3>
+    <ul id="playlistItems"></ul>
+  </div>
+
+  <audio id="audioPlayer" controls style="margin-top: 20px; width: 50%;"></audio>
+</section>
+
+
+<section id="login" class="login-container">
+  <form class="login-box">
+    <h2>Login</h2>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" required>
+
+    <button type="submit">Login</button>
+  </form>
+</section>
+  
+
+  <section id="about" class="section" style="background-color: #f1f7ff;">
+    <div class="about-container">
+        <h2>About Us</h2>
+        <div class="content">
+            <!-- Image of a person with headphones -->
+            <img src="images1/images/aboutgirl1.JPG" alt="Person with headphones">
+            
+            <!-- About Us Text -->
+            <p>
+                <i>Music connects people in ways nothing else can.</i> 
+                We wanted to create a space where collaboration goes beyond just sharing songs—where you can 
+                discover new music, build playlists together in real time, and create lasting memories through sounds.
+        
+                We believe music is best when shared. <b>Our platform</b> was built for music lovers who want to create, curate, 
+                and collaborate on playlists with friends, family, and the community. 
+                Whether you're crafting the perfect road trip mix, a party anthem lineup, or a chill study session playlist, 
+                we make it easy to bring everyone's favorite tracks together in one place—<i>through sound.</i>
+            </p>
+        </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Blue Vibes. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
